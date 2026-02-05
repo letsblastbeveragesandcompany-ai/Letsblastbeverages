@@ -2,57 +2,147 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LetsBlast Beverage and Company</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 body{
 margin:0;
-font-family:Arial;
+font-family: 'Segoe UI', sans-serif;
 background:#f4f4f4;
+scroll-behavior:smooth;
+}
+
+/* HEADER */
+header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 8%;
+background:linear-gradient(90deg,#ff3c00,#ff7a00);
+color:white;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-area img{
+height:60px;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+opacity:0.7;
+}
+
+/* HERO */
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('hero.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+/* SECTION */
+section{
+padding:70px 10%;
 text-align:center;
 }
 
-header{
-background:#ff3c00;
-color:white;
-padding:20px;
+h2{
+color:#ff3c00;
+margin-bottom:20px;
 }
 
-.hero{
-background:#ff7a00;
-color:white;
-padding:80px 20px;
+/* TEAM */
+.team{
+display:flex;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
 }
 
-section{
-padding:50px 20px;
+.team-card{
+background:white;
+padding:25px;
+width:260px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
 }
 
+/* PRODUCTS */
 .products{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:20px;
+gap:30px;
 }
 
-.card{
+.product-card{
 background:white;
+width:260px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
 padding:20px;
-width:220px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
-.card:hover{
+.product-card img{
+width:100%;
+}
+
+.product-card:hover{
 transform:translateY(-10px);
+}
+
+/* CONTACT */
+.contact{
+background:#222;
+color:white;
+padding:60px 0;
 }
 
 footer{
 background:black;
 color:white;
 padding:20px;
+text-align:center;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:22px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 </style>
 </head>
@@ -60,53 +150,95 @@ padding:20px;
 <body>
 
 <header>
-<h1>LetsBlast Beverage and Company</h1>
-<p>Har Sip Mein Dhamaka</p>
+<div class="logo-area">
+<img src="logo.png">
+<h3>LetsBlast Beverage</h3>
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <div class="hero">
-<h2>Refreshing Taste. Powerful Blast.</h2>
+<h1>Har Sip Mein Dhamaka</h1>
 </div>
 
-<section>
-<h2>About Us</h2>
-<p>LetsBlast Beverage and Company is a fast-growing beverage brand based in Patna, Bihar delivering refreshing flavors with premium quality and strong distribution network.</p>
+<section id="about">
+<h2>About Company</h2>
+<p>
+LetsBlast Beverage and Company is a fast-growing beverage brand based in Patna, Bihar. 
+We are committed to delivering premium quality refreshing drinks with powerful taste and strong distribution network across India.
+</p>
 </section>
 
 <section>
+<h2>Leadership</h2>
+<div class="team">
+
+<div class="team-card">
+<h3>ARPANA DEVI</h3>
+<p>Proprietor</p>
+</div>
+
+<div class="team-card">
+<h3>SHIVANI CHANDRA</h3>
+<p>Managing Director (MD)</p>
+</div>
+
+</div>
+</section>
+
+<section id="products">
 <h2>Our Products</h2>
 
 <div class="products">
 
-<div class="card">
+<div class="product-card">
+<img src="bottle.jpg">
 <h3>Jeera Blast</h3>
 </div>
 
-<div class="card">
+<div class="product-card">
+<img src="bottle.jpg">
 <h3>Orange Blast</h3>
 </div>
 
-<div class="card">
+<div class="product-card">
+<img src="bottle.jpg">
 <h3>Watermelon Blast</h3>
 </div>
 
-<div class="card">
+<div class="product-card">
+<img src="bottle.jpg">
 <h3>Mojito Blast</h3>
 </div>
 
 </div>
-
 </section>
 
-<section>
-<h2>Contact</h2>
-<p>📍 Patna, Bihar</p>
+<section id="contact" class="contact">
+<h2>Contact Details</h2>
+<p>📍 At 70/35 Feet Road, Patna, Bihar – 800002</p>
 <p>📞 7209668777</p>
+<p>📧 company@letsblastbeverages.in</p>
+</section>
+
+<section style="background:#fff; padding:50px 10%; text-align:center;">
+<h2 style="color:#ff3c00;">Legal Information</h2>
+<p><strong>GST Number:</strong> 10DPDPD5426N1Z3</p>
+<p><strong>FSSAI License Number:</strong> 10425000000447</p>
+<p>We operate under approved compliance standards ensuring safety and quality in every product.</p>
 </section>
 
 <footer>
-© 2026 LetsBlast Beverage and Company
+© 2026 LetsBlast Beverage and Company | All Rights Reserved
 </footer>
+
+<a class="whatsapp" href="https://wa.me/917209668777">💬</a>
 
 </body>
 </html>
