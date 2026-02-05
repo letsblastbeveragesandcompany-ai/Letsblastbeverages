@@ -1,64 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LetsBlast Beverage and Company</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 body{
 margin:0;
-font-family:Arial, sans-serif;
+font-family:Arial;
 background:#f4f4f4;
-scroll-behavior:smooth;
+text-align:center;
 }
 
-/* HEADER */
 header{
+background:#ff3c00;
+color:white;
+padding:20px;
+}
+
+.hero{
+background:#ff7a00;
+color:white;
+padding:80px 20px;
+}
+
+section{
+padding:50px 20px;
+}
+
+.products{
 display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 8%;
-background:linear-gradient(90deg,#ff3c00,#ff7a00);
-color:white;
-position:sticky;
-top:0;
-z-index:1000;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
 }
 
-header img{
-height:70px;
-}
-
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
+.card{
+background:white;
+padding:20px;
+width:220px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
-nav a:hover{
-color:black;
+.card:hover{
+transform:translateY(-10px);
 }
 
-/* HERO */
-.hero{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('hero.jpg');
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
+footer{
+background:black;
 color:white;
+padding:20px;
 }
+</style>
+</head>
 
-.hero h1{
-font-size:55px;
-animation:zoomIn 1.5s ease-in-out;
-}
+<body>
 
-@keyframes zoomIn{
-0%{transform:scale(0
+<header>
+<h1>LetsBlast Beverage and Company</h1>
+<p>Har Sip Mein Dhamaka</p>
+</header>
+
+<div class="hero">
+<h2>Refreshing Taste. Powerful Blast.</h2>
+</div>
+
+<section>
+<h2>About Us</h2>
+<p>LetsBlast Beverage and Company is a fast-growing beverage brand based in Patna, Bihar delivering refreshing flavors with premium quality and strong distribution network.</p>
+</section>
+
+<section>
+<h2>Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+<h3>Jeera Blast</h3>
+</div>
+
+<div class="card">
+<h3>Orange Blast</h3>
+</div>
+
+<div class="card">
+<h3>Watermelon Blast</h3>
+</div>
+
+<div class="card">
+<h3>Mojito Blast</h3>
+</div>
+
+</div>
+
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>📍 Patna, Bihar</p>
+<p>📞 7209668777</p>
+</section>
+
+<footer>
+© 2026 LetsBlast Beverage and Company
+</footer>
+
+</body>
+</html>
