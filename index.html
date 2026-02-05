@@ -1,56 +1,199 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Lets Blast Beverages & Company</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#f7f7f7; }
-    header { background:#d60000; color:white; padding:20px; text-align:center; }
-    section { padding:30px; }
-    .box { background:white; padding:20px; border-radius:8px; margin-bottom:20px; }
-    footer { background:#111; color:white; text-align:center; padding:15px; }
-    h2 { color:#d60000; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LetsBlast Beverage and Company</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f8f8f8;
+color:#333;
+}
+
+header{
+background:#ff3c00;
+padding:15px 40px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+color:white;
+}
+
+header img{
+height:60px;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+background:url('hero.jpg') no-repeat center center/cover;
+height:500px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+background:rgba(0,0,0,0.5);
+padding:20px;
+border-radius:10px;
+}
+
+section{
+padding:60px 10%;
+text-align:center;
+}
+
+.products{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.product-card{
+background:white;
+width:250px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img{
+width:100%;
+border-radius:10px;
+}
+
+.product-card h3{
+margin:15px 0 10px 0;
+color:#ff3c00;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.gallery img{
+width:250px;
+border-radius:10px;
+}
+
+.contact{
+background:#ff3c00;
+color:white;
+padding:50px;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:white;
+color:#ff3c00;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>LETS BLAST BEVERAGES & COMPANY</h1>
-  <p>A BLAST OF QUALITY & TASTE</p>
+<img src="logo.png" alt="LetsBlast Logo">
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
+<div class="hero">
+<h1>LetsBlast Beverage and Company<br>Har Sip Mein Dhamaka</h1>
+</div>
+
+<section id="about">
+<h2>About Us</h2>
+<p>
+LetsBlast Beverage and Company is a fast-growing beverage brand based in Patna, Bihar. 
+We are committed to delivering refreshing, high-quality drinks that create excitement in every sip. 
+Our mission is to bring bold flavors and unforgettable taste experiences to every corner of India.
+</p>
+</section>
+
+<section id="products">
+<h2>Our Products</h2>
+
+<div class="products">
+
+<div class="product-card">
+<img src="jeera.jpg" alt="Jeera Drink">
+<h3>Jeera Blast</h3>
+<p>Traditional taste with a powerful refreshing twist.</p>
+</div>
+
+<div class="product-card">
+<img src="orange.jpg" alt="Orange Drink">
+<h3>Orange Blast</h3>
+<p>Bright, juicy and full of citrus energy.</p>
+</div>
+
+<div class="product-card">
+<img src="watermelon.jpg" alt="Watermelon Drink">
+<h3>Watermelon Blast</h3>
+<p>Cool and sweet flavor for ultimate freshness.</p>
+</div>
+
+<div class="product-card">
+<img src="mojito.jpg" alt="Mojito Drink">
+<h3>Mojito Blast</h3>
+<p>Minty freshness with a sparkling punch.</p>
+</div>
+
+</div>
+</section>
+
 <section>
-  <div class="box">
-    <h2>About Us</h2>
-    <p>
-      LETS BLAST BEVERAGES & COMPANY is an emerging soft drink brand committed
-      to quality, taste, and market growth. We focus on strong distribution,
-      affordable pricing, and long-term business opportunities.
-    </p>
-  </div>
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="jeera.jpg">
+<img src="orange.jpg">
+<img src="watermelon.jpg">
+<img src="mojito.jpg">
+</div>
+</section>
 
-  <div class="box">
-    <h2>Business Opportunity</h2>
-    <p>
-      We are expanding across India with a strong focus on Bihar.
-      Minimum Investment: <b>₹1,00,000 ONLY</b><br>
-      High demand FMCG product with growing market potential.
-    </p>
-  </div>
-
-  <div class="box">
-    <h2>Contact Us</h2>
-    <p>
-      📞 Mobile: <b>7209668777</b><br>
-      📍 Location: Patna, Bihar
-    </p>
-  </div>
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p>📍 Patna, Bihar</p>
+<p>📞 7209668777</p>
+<a class="btn" href="https://wa.me/917209668777">Chat on WhatsApp</a>
 </section>
 
 <footer>
-  © 2026 Lets Blast Beverages & Company
+© 2026 LetsBlast Beverage and Company | All Rights Reserved
 </footer>
 
 </body>
